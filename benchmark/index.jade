@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  head
+    title="benchmark"
+    script(type="text/javascript" src="build/bla.min.js")
+    script(type="text/javascript" src="benchmark.js")
+  body
+    h3 batching requests
+    table
+      tr
+        td Number of requests:
+        td
+          span#requests-number
+      tr
+        td Sent with batching:
+        td
+          span#batch
+      tr
+        td Sent without batching:
+        td
+          span#no-batch

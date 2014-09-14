@@ -53,4 +53,7 @@ build:
 		blocks/bla/bla.js > build/bla.js
 	@$(NODE_MODULES_BIN)/uglifyjs build/bla.js > build/bla.min.js
 
-.PHONY: all npm validate lint test test-client test-server run coverage build
+benchmark:
+	@node benchmark/app.js
+
+.PHONY: all npm validate lint test test-client test-server run coverage build benchmark
